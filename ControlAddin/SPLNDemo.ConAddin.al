@@ -1,6 +1,6 @@
 controladdin "SPLN Demo"
 {
-    //MaximumHeight = 300;
+    RequestedHeight = 500;
 
     VerticalStretch = true;
     VerticalShrink = true;
@@ -13,5 +13,5 @@ controladdin "SPLN Demo"
 
     event Ready()
 
-    procedure MyProcedure()
+    procedure embedHomePage()
 }

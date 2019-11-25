@@ -13,7 +13,7 @@ page 69000 "SPLN WebPage"
 
                 trigger Ready()
                 begin
-                    Message('We are ready!!!');
+                    CurrPage."SPLN Demo".embedHomePage();
                 end;
             }
         }
