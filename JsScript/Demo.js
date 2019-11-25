@@ -9,9 +9,9 @@ function createIframe()
 }
 
 
-function embedHomePage()
+function embedHomePage(homePage)
 {
     createIframe();
     var webPage = document.getElementById('webPage');
-    webPage.src = 'https://simplanova.com/blog/'; 
+    webPage.src = homePage; 
 }

@@ -11,12 +11,31 @@ page 69000 "SPLN WebPage"
             {
                 ApplicationArea = All;
 
-                trigger Ready()
+                // trigger Ready()
+                // begin
+                //     CurrPage."SPLN Demo".embedHomePage(Rec."Home Page");
+                // end;
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(SPLNLoadHomePage)
+            {
+                Caption = 'Load home page';
+                ApplicationArea = All;
+
+                trigger OnAction()
                 begin
-                    CurrPage."SPLN Demo".embedHomePage();
+                    CurrPage."SPLN Demo".embedHomePage(Rec."Home Page");
                 end;
             }
         }
     }
+
+
 
 }

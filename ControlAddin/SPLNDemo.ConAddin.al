@@ -13,5 +13,5 @@ controladdin "SPLN Demo"
 
     event Ready()
 
-    procedure embedHomePage()
+    procedure embedHomePage(homePage: Text)
 }
