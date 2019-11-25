@@ -10,11 +10,15 @@ page 69000 "SPLN WebPage"
             usercontrol("SPLN Demo"; "SPLN Demo")
             {
                 ApplicationArea = All;
+                trigger Ready()
+                begin
+                    CurrPage."SPLN Demo".addButton('Lets call back!', 'Hello folks! :)');
+                end;
 
-                // trigger Ready()
-                // begin
-                //     CurrPage."SPLN Demo".embedHomePage(Rec."Home Page");
-                // end;
+                trigger ButtonPressed(buttonText: Text)
+                begin
+                    Message(buttonText);
+                end;
             }
         }
     }

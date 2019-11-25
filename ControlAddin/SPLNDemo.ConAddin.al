@@ -1,6 +1,6 @@
 controladdin "SPLN Demo"
 {
-    RequestedHeight = 500;
+
 
     VerticalStretch = true;
     VerticalShrink = true;
@@ -10,8 +10,10 @@ controladdin "SPLN Demo"
     StyleSheets = 'StyleSheet/StyleSheet.css';
     StartupScript = 'JsScript/Start.js';
 
-
     event Ready()
+    event ButtonPressed(buttonText: Text)
 
     procedure embedHomePage(homePage: Text)
+
+    procedure addButton(ButtonName: Text; callText: Text)
 }
